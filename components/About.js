@@ -30,7 +30,7 @@ export default function About() {
             work with clients and bring their vision to life.
           </p>
         </div>
-        <div className="image-container animate__animated animate__slideInUp animate__delay-1s">
+        <div className="image-container animate__animated animate__slideInUp">
           <img src={image.src} />
         </div>
       </div>
