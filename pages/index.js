@@ -18,13 +18,7 @@ export default function Home({ posts }) {
       <Hero />
       <About />
 
-      <main>
-        <h1 className="title">Headless WordPress Next.js Starter</h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
+      <main class="main-margin">
         <div className="grid">
           {posts.map((post) => {
             return <PostCard key={post.uri} post={post}></PostCard>;
