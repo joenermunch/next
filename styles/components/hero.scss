@@ -1,0 +1,43 @@
+@import "../variables.scss";
+
+.hero-container {
+  background-color: $white;
+  color: #fff;
+
+  .hero-inner-container {
+    position: relative;
+  }
+
+  .arrow-container {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    position: absolute;
+
+    a {
+      padding: 5px;
+    }
+  }
+
+  .subtitle-container {
+    margin-bottom: 30px;
+
+    span {
+      font-family: $main-font;
+      font-weight: 500;
+      color: $highlight;
+      font-size: clamp(18px, 5vw, 25px);
+      letter-spacing: 2px;
+    }
+  }
+
+  .main-cta {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-container .arrow-container {
+    display: none;
+  }
+}

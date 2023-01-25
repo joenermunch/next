@@ -1,0 +1,87 @@
+@import "../variables.scss";
+
+.about-container {
+  .about-inner {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin: 0 auto;
+    align-items: center;
+
+    .image-container {
+      background: transparent;
+      transition: 0.5s;
+      margin: 0 auto;
+      height: 300px;
+      width: 300px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      border: 2px solid $highlight-hover;
+      padding: 5px;
+
+      &:hover {
+        padding: 0;
+        border-color: transparent;
+        background: $highlight-hover;
+      }
+
+      img {
+        transition: 0.5s;
+        object-fit: cover;
+        mix-blend-mode: multiply;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        transform: rotate(-5deg);
+      }
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.wave {
+  animation: wave-animation 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(13deg);
+  }
+  20% {
+    transform: rotate(-6deg);
+  }
+  30% {
+    transform: rotate(13deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(9deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-container {
+    .about-inner {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 60px;
+    }
+  }
+}
