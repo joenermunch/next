@@ -1,38 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Crash Course: Build a Headless WordPress App with Next.js and WPGraphQL
+
+This crash course is a part of WP Engine's Headless Developer Roadmap. It covers the basics of creating a headless WordPress site using Next.js and WPGraphQL. You can find a step-by-step guide on the WP Engine Developer Relations site. By the end of the course, you will be able to:
+- Create static and dynamic routes in Next.js
+- Use the GraphiQL IDE to compose GraphQL queries
+- Use Apollo Client fetch data in your app
+- Choose appropriate Next.js rendering methods based on your content
+
+
+[✍️ Read the step-by-step tutorial](https://developers.wpengine.com/blog/crash-course-build-a-simple-headless-wordpress-app-with-next-js-wpgraphql)
+[📹 Watch the video](https://www.youtube.com/watch?v=wfy51nhjfUQ&t=1680s)
 
 ## Getting Started
+Follow along with the blog post, and run the following commands to clone this repo:
 
-First, run the development server:
+    git clone https://github.com/JEverhart383/crash-course-headless-wp-next-wpgraphql.git
+    cd crash-course-headless-wp-next-wpgraphql
+    npm install
+    npm run dev
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Headless WordPress Hosting with Atlas
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+WP Engine's Atlas platform provides a performant and user-friendly hosting platform for headless WordPress and Node-based JavaScript apps. [Create a free sandbox account](https://wpengine.com/atlas/) to try the platform. 
