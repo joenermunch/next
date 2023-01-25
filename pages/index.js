@@ -18,7 +18,7 @@ export default function Home({ posts }) {
       <Hero />
       <About />
 
-      {/* <main>
+      <main>
         <h1 className="title">Headless WordPress Next.js Starter</h1>
 
         <p className="description">
@@ -30,7 +30,7 @@ export default function Home({ posts }) {
             return <PostCard key={post.uri} post={post}></PostCard>;
           })}
         </div>
-      </main> */}
+      </main>
 
       <Footer></Footer>
     </div>
