@@ -9,13 +9,13 @@ function MyApp({ Component, pageProps }) {
     <ApolloProvider client={client}>
       <Script
         id="tagmanager-main"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         async
         src={`https://www.googletagmanager.com/gtag/js?id=GTM-M2M3SSG`}
       ></Script>
       <Script
         id="tagmanager-setup"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
