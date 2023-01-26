@@ -25,10 +25,10 @@ export default function Hero() {
         <div class="frameworks">
           <img class="wp" src={wp.src} />
           <img class="gt" src={gt.src} />
-          <img class="php" src={php.src} />
-          <img class="next" src={next.src} />
+          {/* <img class="php" src={php.src} />}*/}
 
           <img class="react rotate" src={react.src} />
+          <img class="next" src={next.src} />
         </div>
       </div>
     </div>
