@@ -1,7 +1,6 @@
 import image from "../assets/images/me.jpg"; // relative path to image
 
 export default function About() {
-  console.log(image);
   return (
     <div className="about-container main-margin" id="about">
       <div className="inner-block about-inner">

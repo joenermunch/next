@@ -12,6 +12,13 @@ header {
 
   .logo-container a {
     text-decoration: none;
+
+    span {
+      transition: $transition;
+      &:hover {
+        color: $highlight;
+      }
+    }
   }
 
   .inner {
@@ -33,7 +40,7 @@ header {
       text-decoration: none;
       color: $black;
       &:hover {
-        color: $highlight-hover;
+        color: $highlight;
       }
     }
   }

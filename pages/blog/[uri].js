@@ -20,7 +20,7 @@ export default function SlugPage({ post, allPosts }) {
           <div className="text-container">
             <div className="breadcrumbs"></div>
             <h1>{post?.title ? post?.title : <Skeleton />}</h1>
-            <p>{post?.excerpt ? parse(post?.excerpt) : <Skeleton />}</p>
+            {post?.excerpt ? parse(post?.excerpt) : <Skeleton />}
             <div className="category-container">
               {post?.categories.nodes.map((category) => {
                 return <span className="category">{category.name}</span>;
@@ -107,7 +107,6 @@ export async function getStaticProps({ params }) {
 
   const post = response?.data?.post;
   const allPosts = responsePosts?.data?.posts;
-  console.log(allPosts);
   return {
     props: {
       post,
