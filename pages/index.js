@@ -57,7 +57,7 @@ export default function Home({ posts }) {
 export async function getStaticProps() {
   const GET_POSTS = gql`
     query GetAllPosts {
-      posts(first: 3) {
+      posts(first: 3, where: { orderby: { field: DATE, order: DESC } }) {
         nodes {
           date
           excerpt
