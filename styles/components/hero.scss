@@ -1,9 +1,39 @@
 .hero-container {
   background-color: $white;
   color: #fff;
+  position: relative;
+
+  &.inner-block {
+    padding: 0;
+  }
+
+  p {
+    color: $black;
+    font-family: $main-font;
+    max-width: 750px;
+    margin-top: 30px;
+  }
+
+  .frameworks {
+    display: flex;
+    gap: 2em;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+    .rotate {
+      animation: rotation 5s infinite linear;
+    }
+
+    img {
+      width: clamp(50px, 15vw, 70px);
+    }
+  }
 
   .hero-inner-container {
-    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .arrow-container {
@@ -34,8 +64,29 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .hero-container .frameworks {
+    gap: 3em;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .hero-container .arrow-container {
     display: none;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    filter: brightness(0);
+  }
+
+  30% {
+    filter: brightness(1);
+  }
+  100% {
+    transform: rotate(359deg);
+    filter: brightness(0);
   }
 }

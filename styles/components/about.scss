@@ -8,24 +8,24 @@
 
     .image-container {
       background: transparent;
-      transition: 0.5s;
+      transition: $transition;
       margin: 0 auto;
       height: 300px;
       width: 300px;
       border-radius: 100%;
       display: flex;
       align-items: center;
-      border: 2px solid $highlight-hover;
+      border: 2px solid $highlight;
       padding: 5px;
 
       &:hover {
         padding: 0;
         border-color: transparent;
-        background: $highlight-hover;
+        background: $highlight;
       }
 
       img {
-        transition: 0.5s;
+        transition: $transition;
         object-fit: cover;
         mix-blend-mode: multiply;
         height: 100%;
