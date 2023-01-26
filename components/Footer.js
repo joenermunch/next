@@ -1,14 +1,15 @@
-
-export default function Footer (){
-    return (
-        <footer>
-            <a
-            href="https://developers.wpengine.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            Part of the WP Engine Headless Developers Road Map 🗺️ 
-            </a>
-        </footer>
-    )
+export default function Footer() {
+  return (
+    <footer>
+      <div class="main-margin">
+        <a
+          href="https://github.com/joenermunch/next"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          built with next.js by joener münch
+        </a>
+      </div>
+    </footer>
+  );
 }

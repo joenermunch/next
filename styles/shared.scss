@@ -59,6 +59,22 @@ body .wp-site-blocks {
   padding: 0px 30px;
 }
 
+footer {
+  padding: 30px 0;
+  display: flex;
+  justify-content: flex-start;
+
+  .main-margin {
+    width: 100%;
+  }
+
+  a {
+    text-align: left;
+    font-family: $titles;
+    color: $black;
+  }
+}
+
 .main-cta {
   display: flex;
   padding: 15px 25px;

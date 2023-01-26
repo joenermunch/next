@@ -49,15 +49,6 @@ export default function Home({ posts }) {
           </div>
         </div>
       </div>
-
-      <main class="main-margin">
-        <div className="grid">
-          {posts.map((post) => {
-            return <PostCard key={post.uri} post={post}></PostCard>;
-          })}
-        </div>
-      </main>
-
       <Footer></Footer>
     </div>
   );
