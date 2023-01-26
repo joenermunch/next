@@ -11,7 +11,7 @@ export default function SlugPage({ post, allPosts }) {
   return (
     <div>
       <Head>
-        <title>Blog | {post?.title}</title>
+        <title>{post?.title} | joener.io</title>
         <link rel="icon" href="favicon.ico"></link>
       </Head>
 
