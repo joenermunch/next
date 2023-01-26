@@ -2,8 +2,50 @@
   background-color: $white;
   color: #fff;
 
+  &.inner-block {
+    padding: 0;
+  }
+
+  p {
+    color: $black;
+    font-family: $main-font;
+    font-size: 18px;
+    max-width: 750px;
+    margin-top: 30px;
+    line-height: 26px;
+  }
+
+  .frameworks {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+    .rotate {
+      animation: rotation 5s infinite linear;
+    }
+
+    .wp,
+    .react {
+      width: clamp(35px, 8vw, 70px);
+    }
+
+    .next,
+    .php {
+      width: clamp(55px, 8vw, 90px);
+    }
+
+    .gt {
+      width: clamp(55px, 8vw, 75px);
+    }
+  }
+
   .hero-inner-container {
     position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .arrow-container {
@@ -37,5 +79,20 @@
 @media only screen and (max-width: 768px) {
   .hero-container .arrow-container {
     display: none;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    filter: brightness(0);
+  }
+
+  30% {
+    filter: brightness(1);
+  }
+  100% {
+    transform: rotate(359deg);
+    filter: brightness(0);
   }
 }

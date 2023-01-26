@@ -3,6 +3,7 @@ import { ApolloProvider } from "@apollo/client/react";
 import { client } from "../lib/apollo";
 import "animate.css/animate.min.css";
 import Script from "next/script";
+import Header from "../components/Header";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -25,6 +26,8 @@ function MyApp({ Component, pageProps }) {
           `,
         }}
       />
+      <Header />
+
       <Component {...pageProps} />
     </ApolloProvider>
   );

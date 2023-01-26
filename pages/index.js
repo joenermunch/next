@@ -6,6 +6,7 @@ import { getAllPosts } from "../lib/test-data";
 import { client } from "../lib/apollo";
 import { gql } from "@apollo/client";
 import About from "../components/About";
+import Header from "../components/Header";
 
 export default function Home({ posts }) {
   return (
